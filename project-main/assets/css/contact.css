@@ -1,0 +1,94 @@
+* {
+    font-family: 'Maven Pro', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('https://templates.bwlthemes.com/knowledgedesk/images/kb_home_4_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(179,178,176, 0.6);
+    border-radius: 5px;
+}
+
+.heading {
+    color: white;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.enter_info {
+    padding: 15px;
+    margin: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+#add_btn:hover, .delete_btn:hover {
+    background-color: rgba(0,0,0,.9);
+    color: white;
+}
+
+.contact_container {
+    display: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgba(255,255,255,0.8);
+    padding: 20px 40px;
+    border-radius: 10px;
+    position: relative;
+    margin: 30px 10px;
+}
+
+.contact_card p {
+    margin: 2px 0;
+}
+
+.delete_btn {
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    border-radius: 50%;
+    height: 30px;
+    width: 35px;
+    border: 1px black solid;
+    background-color: rgba(211, 211, 211);
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 5px 2px 5px;
+}
+
+@media only screen and (min-width: 810px) {
+
+    .contact_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 80%;
+    }    
+
+}
